@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Table</title>
+    <meta charset="UTF-8">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td {
+            border: 3px solid black; 
+            text-align: center;
+            padding: 30px; 
+            font-size: 16px;  
+        }
+    </style>
+</head>
+<body>
+	<table>
+		<!-- İlk sətr -->
+		<tr>
+			<td colspan="2" rowspan="2">cell 1</td>
+			<td colspan="3" rowspan="2">cell 2</td>
+		</tr>
+		<!-- Boş sətir -->
+		<tr></tr>
+
+		<!-- İkinci sətr -->
+		<tr>
+			<td rowspan="5">cell 3</td>
+			<td rowspan="4" colspan="2">cell 4</td>
+			<td colspan="2" rowspan="4">cell 5</td>
+		</tr>
+		<!-- Boş sətirlər -->
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+
+		<!-- Üçüncü sətr -->
+		<tr>
+			<td colspan="2" rowspan="3">cell 7</td>
+			<td colspan="2" rowspan="3">cell 8</td>
+		</tr>
+		<!-- Dördüncü sətr -->
+		<tr>
+			<td rowspan="2">cell 6</td>
+		</tr>
+		<!-- Boş sətir -->
+		<tr></tr>
+	</table>
+</body>
+</html>
